@@ -1,6 +1,6 @@
 // Hunter class hooks for the shared Forever guide app.js
 (function(){
-const WN={bm:'BM: pet tanks',mm:'MM alt: shots'};
+const WN={bm:'Beast Mastery',mm:'Marksmanship'};
 function rotFor(l,W){const a=[];
  a.push('<b>'+(l>=10?'Aspect of the Hawk':l>=4?'Aspect of the Monkey':'Auto Shot')+'</b> up <span class="src">'+WN[W]+'</span>');
  if(l>=6)a.push("<b>Hunter's Mark</b> before the pull"+(l>=10?', then send the pet':''));
@@ -22,7 +22,7 @@ function wfix(c,l,W){if(W==='mm'){if(c.mid[3]&&c.mid[3].n==='Summon Hawk')c.mid[
  c.top[6]=l>=34?{n:'Trueshot Aura',u:1}:null;c.aur[4]=l>=49?{n:'Sniper Shot',u:1}:null}return c}
 function macroUpd(l){}
 window.K={prefix:'hun',modeKey:'spec',modes:['bm','mm'],rotFor,advice,SH,wfix,
- barLab:{top:['Top','click · pet care and escapes'],mid:['Middle','keys 1-7 · pressed constantly'],bot:['Bottom','pet and travel · out of combat'],aur:['Aspect bar','aspects, tracking, traps']},
+ barLab:{top:['Top','click · pet care and escapes'],mid:['Middle','keys 1-7 · pressed constantly'],bot:['Bottom','pet and travel · out of combat'],aur:['Aspect Bar','aspects, tracking, traps']},
  iconAlias:null,label:null,macroUpd,
  wnote:{bm:'BM main: the highest damage bow, gun or crossbow you can find; your pet inherits your crit and attack power (WoW Forever DB).',mm:'MM alt: same ranged weapon; Intellect counts about as much as Agility once Careful Aim is 5/5 (WoW Forever DB).'}};
 })();
